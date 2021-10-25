@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail</title>
+    <link rel="stylesheet" href="detail.css" />
+  </head>
+  <body>
+    <section class="modal modal--hidden" id="modal">
+      <div class="modal--inner">
+        <button class="modal--inner__close">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1rem" width="1rem" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <div class="modal--inner__content"></div>
+      </div>
+    </section>
+    <section class="breadcrumb">
+      <div class="container breadcrumb--nav">
+        <a href="/" class="breadcrumb--link">Home</a>
+        <span class="divider"></span>
+        <a href="/" class="breadcrumb--link">Product</a>
+        <span class="divider"></span>
+        <a href="/" class="breadcrumb--link">Abc xzy</a>
+      </div>
+    </section>
+    <main class="container">
+      <div class="product">
+        <div class="product--image">
+          <img src="1.jpeg" id="mainImg" />
+          <div class="product--image__other">
+            <img src="1.jpeg" id="otherImg" class="img--active" />
+            <img src="2.jpeg" id="otherImg" />
+            <img src="3.jpeg" id="otherImg" />
+            <img src="2.jpeg" id="otherImg" />
+            <img src="1.jpeg" id="otherImg" />
+          </div>
+        </div>
+        <div class="product--info">
+          <div class="product--label">
+            <span class="product--label__sale">-50%</span>
+            <span class="product--label__available">Còn Hàng</span>
+          </div>
+          <h2 class="product--title">Lorem Ipsum</h2>
+          <div class="product--rating">
+            <div class="product--rating__star">
+              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
+              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
+              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
+              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
+              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
+            </div>
+            <span>Chưa có đánh giá</span>
+          </div>
+          <div class="product--id">
+            <spn class="product--id__title"> Mã Sản Phẩm: </spn>
+            <span>SP001</span>
+          </div>
+          <div class="product--man">
+            <span class="product--man__title"> Nhà Phân Phối: </span>
+            <span>Nike</span>
+          </div>
+          <div class="product--price">
+            <span class="product--price__sale">300.000 <sup>vnđ</sup></span>
+            <span class="product--price__current">150.000 <sup>vnđ</sup></span>
+          </div>
+          <form action="">
+            <div class="product--size">
+              <h3 class="product--size__label">Size</h3>
+              <div class="product--size__item__wrapper">
+                <label class="product--size__item">
+                  <input type="radio" name="size" value="L" checked />
+                  <span>L</span>
+                </label>
+                <label class="product--size__item">
+                  <input type="radio" name="size" value="M" />
+                  <span>M</span>
+                </label>
+                <label class="product--size__item">
+                  <input type="radio" name="size" value="XL" />
+                  <span>XL</span>
+                </label>
+              </div>
+            </div>
+            <div class="product--tooltip">
+              <button id="sizeInfo">Về Kích Thước</button>
+              <button id="shippingInfo">Hướng Dẫn Đổi Trả</button>
+              <button id="contactInfo">Hỏi Đáp Về Sản Phẩm</button>
+            </div>
+            <div class="product--form">
+              <div class="product--form--quantity">
+                <button id="decreaseQuantity">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                  </svg>
+                </button>
+                <input type="text" min="1" value="1" id="quantity" name="quantity" disabled />
+                <button id="increaseQuantity">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                  </svg>
+                </button>
+              </div>
+              <button class="product--form--addcart">Thêm vào giỏ</button>
+            </div>
+            <button class="product--buynow">Mua Ngay</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <div class="product-tab">
+        <ul class="product-tab--navbar">
+          <li class="nav-item active">Miêu tả sản phẩm</li>
+          <li class="nav-item">Đánh Giá</li>
+        </ul>
+        <div class="product-tab--content">
+          <div class="nav-tab show">
+            <div class="nav-tab--describe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+          <div class="nav-tab">
+            <div class="nav-tab--review">
+              <p>Chưa có đánh giá của người dùng</p>
+
+              <button class="write-review">Viết đánh giá</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const quantityInput = document.querySelector("#quantity");
+      const incBtn = document.querySelector("#increaseQuantity");
+      const decBtn = document.querySelector("#decreaseQuantity");
+
+      incBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        let curQty = parseInt(quantityInput.value);
+        quantityInput.setAttribute("value", curQty + 1);
+      });
+      decBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        let curQty = parseInt(quantityInput.value);
+        curQty > 1 && quantityInput.setAttribute("value", curQty - 1);
+      });
+
+      const otherImg = document.querySelectorAll("#otherImg");
+      const mainImg = document.querySelector("#mainImg");
+      otherImg.forEach((imgElement) => {
+        imgElement.addEventListener("click", () => {
+          document.querySelector(".img--active").classList.remove("img--active");
+          mainImg.setAttribute("src", imgElement.getAttribute("src"));
+          imgElement.classList.add("img--active");
+        });
+      });
+
+      const modal = document.querySelector("#modal");
+      const closeModal = document.querySelector(".modal--inner__close");
+      const modalContent = document.querySelector(".modal--inner__content");
+      const showModal = (content) => {
+        modalContent.innerHTML = content;
+        modal.classList.remove("modal--hidden");
+      };
+      closeModal.addEventListener("click", () => {
+        modalContent.innerHTML = "";
+        modal.classList.add("modal--hidden");
+      });
+
+      const sizeModalBtn = document.querySelector("#sizeInfo");
+      sizeModalBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const sizeContent = `<img src="size.jpeg" />`;
+        showModal(sizeContent);
+      });
+
+      const shippingModalBtn = document.querySelector("#shippingInfo");
+      shippingModalBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const shippingConent = `
+        <div class="modal--inner__content__shipping">
+            <h4>Vận Chuyển</h4>
+            <ul>
+              <li>Được hỗ trợ vận chuyển hoả tốc</li>
+              <li>Sản phầm bạn đặt được gói trong túi đựng có Logo của cửa hàng</li>
+              <li>Đọc thêm FAQs để biết thêm chi tiết về các phương thức thanh toán, giá cả và thời gian vận chuyển</li>
+            </ul>
+            <h4>Đổi - Trả Hàng</h4>
+            <ul>
+              <li>Sản phẩm được thanh toán trong vòng 14 ngày</li>
+              <li>Xem các quy định và điều kiện đổi trả hàng tại FAQs</li>
+            </ul>
+          </div>`;
+
+        showModal(shippingConent);
+      });
+
+      const contactInfoBtn = document.querySelector("#contactInfo");
+      contactInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const contactForm = `
+        <div class="modal--inner__content__contact">
+            <form>
+                <h4>Bạn muốn đặt câu hỏi ?</h4>
+                <input type="text" placeholder="Họ và tên" name="contact[name]">
+                <input type="email" placeholder="Email" name="contact[email]">
+                <textarea rows="5" placeholder="Câu hỏi của bạn" name="contact[content]"></textarea>
+                <button type="submit">Gửi Tin Nhắn</button>
+            </form>
+        </div>`;
+        showModal(contactForm);
+      });
+
+      const productTabBtn = document.querySelectorAll(".nav-item");
+      const productNavTab = document.querySelectorAll(".nav-tab");
+      for (let i = 0; i < productTabBtn.length; i++) {
+        productTabBtn[i].addEventListener("click", () => {
+          document.querySelector(".nav-item.active").classList.remove("active");
+          document.querySelector(".nav-tab.show").classList.remove("show");
+
+          productTabBtn[i].classList.add("active");
+          productNavTab[i].classList.add("show");
+        });
+      }
+    </script>
+  </body>
+</html>
