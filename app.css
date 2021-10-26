@@ -132,13 +132,13 @@ ul {
     padding-bottom: 10px;
 }
 
-.nav-user-search {
+.nav-user-cart_search {
     position: relative;
 }
 
 #search-input {
     position: absolute;
-    top: 100%;
+    top: var(--nav-height);
     right: 0;
     height: 25px;
     z-index: -99;
