@@ -6,8 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail</title>
     <link rel="stylesheet" href="../style/detail.css" />
+    <link rel="stylesheet" href="../style/luan.css" />
+    <link rel="stylesheet" href="../style/grid.css">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+      <div class="container">
+        <div class="nav" id="nav">
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hamburger"></div>
+          </div>
+          <a href="#" class="logo"> FASHION STORE </a>
+          <ul class="nav-menu" id="nav-menu">
+            <li class="left-right-effect delay-2"><a href="#">HOME</a></li>
+            <li class="left-right-effect delay-4"><a href="#">PRODUCTS</a></li>
+            <li class="left-right-effect delay-6"><a href="#">CONTACT</a></li>
+            <li class="left-right-effect delay-8"><a href="#">ABOUT</a></li>
+          </ul>
+          <ul class="nav-user-cart">
+            <li class="nav-user-cart_search">
+              <i class="bx bx-search-alt-2" id="search"> </i>
+              <input type="text" id="search-input" />
+            </li>
+            <li class="nav-user-cart_user">
+              <i class="bx bx-user-circle" id="user-circle"></i>
+              <ul class="option-user unlogin" id="option-user">
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Create Account</a></li>
+              </ul>
+              <!-- <ul class="option-user login">
+                              <li>My Account</li>
+                              <li>My Order</li>
+                              <li>Logout</li>
+                          </ul> -->
+            </li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END NAV -->
     <section class="modal modal--hidden" id="modal">
       <div class="modal--inner">
         <button class="modal--inner__close">
@@ -47,11 +87,11 @@
           <h2 class="product--title">Lorem Ipsum</h2>
           <div class="product--rating">
             <div class="product--rating__star">
-              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
-              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
-              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
-              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
-              <img src="https://img.icons8.com/fluency-systems-regular/16/000000/star--v1.png" />
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
             </div>
             <span>No reviews</span>
           </div>
@@ -134,6 +174,61 @@
         </div>
       </div>
     </div>
+    <footer>
+        <div class="footer-top container">
+          <div class="row">
+            <div class="col-3">
+              <h4 class="footer-title">INFORMATION</h4>
+              <ul class="footer-content">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Affiliate</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h4 class="footer-title">CUSTOMER CARE</h4>
+              <ul class="footer-content">
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Track Orders</a></li>
+              </ul>
+            </div>
+            <div class="col-6 newsletter">
+              <h4 class="footer-title">NEWSLETTER</h4>
+              <p>Subscribe to get daily news & more gif</p>
+              <input type="text" placeholder=" Your email address">
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom--social-nav">
+              <a href="#" class="footer-bottom--social-nav__icon">
+                <i class="bx bxl-facebook bx-xs"></i>
+              </a>
+              <a href="#" class="footer-bottom--social-nav__icon">
+                <i class="bx bxl-instagram bx-xs"></i>
+              </a>
+              <a href="#" class="footer-bottom--social-nav__icon">
+                <i class="bx bxl-youtube bx-xs"></i>
+              </a>
+              <a href="#" class="footer-bottom--social-nav__icon">
+                <i class="bx bxl-twitter bx-xs"></i>
+              </a>
+              <a href="#" class="footer-bottom--social-nav__icon">
+                <i class="bx bxl-pinterest-alt bx-xs"></i>
+              </a>
+            </div>
+            <div class="footer-bottom--address">
+              <p>Copyright © 2021. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
       const quantityInput = document.querySelector("#quantity");
@@ -161,61 +256,7 @@
         });
       });
 
-      const modal = document.querySelector("#modal");
-      const closeModal = document.querySelector(".modal--inner__close");
-      const modalContent = document.querySelector(".modal--inner__content");
-      const showModal = (content) => {
-        modalContent.innerHTML = content;
-        modal.classList.remove("modal--hidden");
-      };
-      closeModal.addEventListener("click", () => {
-        modalContent.innerHTML = "";
-        modal.classList.add("modal--hidden");
-      });
-
-      const sizeModalBtn = document.querySelector("#sizeInfo");
-      sizeModalBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const sizeContent = `<img src="../Image/size.jpeg" />`;
-        showModal(sizeContent);
-      });
-
-      const shippingModalBtn = document.querySelector("#shippingInfo");
-      shippingModalBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const shippingContent = `
-        <div class="modal--inner__content__shipping">
-            <h4>SHIPPING</h4>
-            <ul>
-              <li>Next-day and Express delivery options also available</li>
-              <li>Purchases are delivered in an orange box tied with a Bolduc ribbon, with the exception of certain items</li>
-              <li>See the delivery FAQs for details on shipping methods, costs and delivery times</li>
-            </ul>
-            <h4>RETURNS AND EXCHANGES</h4>
-            <ul>
-              <li>Easy and complimentary, within 14 days</li>
-              <li>See conditions and procedure in our return FAQs</li>
-            </ul>
-          </div>`;
-
-        showModal(shippingContent);
-      });
-
-      const contactInfoBtn = document.querySelector("#contactInfo");
-      contactInfoBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const contactForm = `
-        <div class="modal--inner__content__contact">
-            <form>
-                <h4>Have a question ?</h4>
-                <input type="text" placeholder="Name" name="contact[name]">
-                <input type="email" placeholder="Email" name="contact[email]">
-                <textarea rows="5" placeholder="Your question" name="contact[content]"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>`;
-        showModal(contactForm);
-      });
+      
 
       const productTabBtn = document.querySelectorAll(".nav-item");
       const productNavTab = document.querySelectorAll(".nav-tab");
@@ -229,5 +270,6 @@
         });
       }
     </script>
+    <script src="../script/modal.js"></script>
   </body>
 </html>
