@@ -1,26 +1,26 @@
 const modal = document.querySelector("#modal");
-      const closeModal = document.querySelector(".modal--inner__close");
-      const modalContent = document.querySelector(".modal--inner__content");
-      const showModal = (content) => {
-        modalContent.innerHTML = content;
-        modal.classList.remove("modal--hidden");
-      };
-      closeModal.addEventListener("click", () => {
-        modalContent.innerHTML = "";
-        modal.classList.add("modal--hidden");
-      });
+const closeModal = document.querySelector(".modal--inner__close");
+const modalContent = document.querySelector(".modal--inner__content");
+const showModal = (content) => {
+  modalContent.innerHTML = content;
+  modal.classList.remove("modal--hidden");
+};
+closeModal.addEventListener("click", () => {
+  modalContent.innerHTML = "";
+  modal.classList.add("modal--hidden");
+});
 
-      const sizeModalBtn = document.querySelector("#sizeInfo");
-      sizeModalBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const sizeContent = `<img src="../Image/size.jpeg" />`;
-        showModal(sizeContent);
-      });
+const sizeModalBtn = document.querySelector("#sizeInfo");
+sizeModalBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const sizeContent = `<img src="../Image/size.jpeg" />`;
+  showModal(sizeContent);
+});
 
-      const shippingModalBtn = document.querySelector("#shippingInfo");
-      shippingModalBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const shippingContent = `
+const shippingModalBtn = document.querySelector("#shippingInfo");
+shippingModalBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const shippingContent = `
         <div class="modal--inner__content__shipping">
             <h4>SHIPPING</h4>
             <ul>
@@ -35,13 +35,13 @@ const modal = document.querySelector("#modal");
             </ul>
           </div>`;
 
-        showModal(shippingContent);
-      });
+  showModal(shippingContent);
+});
 
-      const contactInfoBtn = document.querySelector("#contactInfo");
-      contactInfoBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const contactForm = `
+const contactInfoBtn = document.querySelector("#contactInfo");
+contactInfoBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const contactForm = `
         <div class="modal--inner__content__contact">
             <form>
                 <h4>Have a question ?</h4>
@@ -51,5 +51,5 @@ const modal = document.querySelector("#modal");
                 <button type="submit">Send Message</button>
             </form>
         </div>`;
-        showModal(contactForm);
-      });
+  showModal(contactForm);
+});
