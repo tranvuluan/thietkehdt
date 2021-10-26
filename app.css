@@ -90,20 +90,69 @@ ul {
 
 .nav-user-cart {
     display: flex;
-    text-align: center;
-    padding-right: 50px;
-}
-
-.nav-user-card {
-    width: 12%;
-    font-size: 2rem !important;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 100px;
 }
 
-ul.nav-user-cart li~li {
-    display: inline-block;
+.nav-user-cart>li {
+    margin-right: 15px;
+    font-size: 2rem;
+}
+
+.nav-user-cart_user {
+    position: relative;
+}
+
+.option-user {
+    position: absolute;
+    top: var(--nav-height);
+    right: -100%;
+    font-size: 18px;
+    width: max-content;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 40px;
+    transition: 0.3s ease-in-out;
+    z-index: -99;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    text-align: right;
+}
+
+.option-user.active {
+    top: var(--nav-height);
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+
+.option-user li {
+    padding-bottom: 10px;
+}
+
+.nav-user-search {
+    position: relative;
+}
+
+#search-input {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 25px;
+    z-index: -99;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+#search-input.active {
+    z-index: 99;
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
 }
 
 .hamburger-menu {
@@ -143,7 +192,7 @@ ul.nav-user-cart li~li {
     bottom: -10px;
 }
 
-.hamburger-menu.active .hamburger{
+.hamburger-menu.active .hamburger {
     background-color: transparent;
 }
 
@@ -189,7 +238,6 @@ ul.nav-user-cart li~li {
     .hamburger-menu {
         display: grid;
     }
-
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -215,5 +263,12 @@ ul.nav-user-cart li~li {
         transform: translateX(0);
         visibility: visible;
         opacity: 1;
+    }
+    .nav-user-cart {
+        margin-right: 0px;
+    }
+    .nav-user-cart>li {
+        font-size: 2.5rem;
+        margin-right: 10px;
     }
 }

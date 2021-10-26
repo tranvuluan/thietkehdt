@@ -25,7 +25,7 @@
 </head>
 
 <body>
-   <!-- NAV -->
+    <!-- NAV -->
     <div class="nav-wrapper">
         <div class="container">
             <div class="nav" id="nav">
@@ -41,29 +41,41 @@
                     <li class="left-right-effect delay-6"><a href="#">CONTACT</a></li>
                     <li class="left-right-effect delay-8"><a href="#">ABOUT</a></li>
                 </ul>
-                <ul class="nav-user-card">
-                    <li><i class='bx bx-search-alt-2'></i></li>
-                    <li>
-                    <i class='bx bx-user-circle'></i>
-                    <!-- <ul class="option-user">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul> -->
+                <ul class="nav-user-cart">
+                    <li class="nav-user-search" >
+                        <i class='bx bx-search-alt-2' id="search">
+                            <input type="text" id="search-input" >
+                        </i>
+                    </li>
+                    <li class="nav-user-cart_user">
+                        <i class='bx bx-user-circle' id="user-circle"></i>
+                        <ul class="option-user unlogin" id="option-user">
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Create Account</a></li>
+                        </ul>
+                        <!-- <ul class="option-user login">
+                            <li>My Account</li>
+                            <li>My Order</li>
+                            <li>Logout</li>
+                        </ul> -->
                     </li>
                     <li><i class='bx bx-cart'></i></li>
-                <ul>
+
+
+                </ul>
             </div>
         </div>
     </div>
-   <!-- END NAV -->
+    <!-- END NAV -->
 
     <!-- SCRIPT -->
     <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- OWL CAROUSEL -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
     <!-- APP SCRIPT -->
     <script src="app.js"></script>
 </body>
