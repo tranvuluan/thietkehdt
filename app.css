@@ -78,6 +78,7 @@ img {
     left: 0;
     z-index: 99;
     width: 100%;
+    background-color: white;
 }
 
 .nav {
@@ -138,7 +139,7 @@ img {
 
 .option-user {
     position: absolute;
-    top: var(--nav-height);
+    top: 50px;
     right: -100%;
     font-size: 18px;
     width: max-content;
@@ -150,10 +151,11 @@ img {
     opacity: 0;
     visibility: hidden;
     text-align: right;
+    background-color: white;
 }
 
 .option-user.active {
-    top: var(--nav-height);
+    top: 40px;
     transform: translateY(0px);
     opacity: 1;
     visibility: visible;
@@ -178,7 +180,7 @@ img {
 
 #search-input {
     position: absolute;
-    top: var(--nav-height);
+    top: 40px;
     right: 0;
     height: 25px;
     z-index: -99;
