@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
 button {
@@ -20,10 +22,6 @@ textarea {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-body {
-  position: relative;
 }
 
 .modal {
@@ -67,6 +65,7 @@ body {
 }
 
 .modal--inner__content__shipping h4, .modal--inner__content__contact h4 {
+  color: rgba(0, 0, 0, 0.75);
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
@@ -78,6 +77,7 @@ body {
 }
 
 .modal--inner__content__shipping ul li, .modal--inner__content__contact ul li {
+  color: rgba(0, 0, 0, 0.65);
   margin-bottom: 0.25rem;
 }
 
@@ -206,6 +206,7 @@ body {
 }
 
 .product--title {
+  color: rgba(0, 0, 0, 0.75);
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: bolder;
@@ -243,8 +244,8 @@ body {
 
 .product--price {
   margin-bottom: 1.25rem;
-  font-weight: bold;
   font-size: 1.35rem;
+  font-weight: 900;
 }
 
 .product--price__sale {
@@ -335,6 +336,7 @@ body {
 }
 
 .product--form--addcart {
+  font-size: 1rem;
   background: #00c4b4;
   padding: 0.25rem 3.5rem;
   color: #fff;
@@ -360,6 +362,7 @@ body {
 }
 
 .product--tooltip button {
+  text-transform: uppercase;
   color: #222;
   background: transparent;
   border-bottom: 1px solid #222;
@@ -373,6 +376,7 @@ body {
 }
 
 .product--buynow {
+  font-size: 1rem;
   background: #fed57e;
   width: 100%;
   padding: 0.75rem;
@@ -392,6 +396,7 @@ body {
 }
 
 .product-tab--navbar .nav-item {
+  text-transform: uppercase;
   margin-right: 2rem;
   padding: 1.25rem 0;
   text-transform: uppercase;
@@ -404,6 +409,10 @@ body {
   color: #222;
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
+}
+
+.product-tab--navbar__describe {
+  font-size: 1rem;
 }
 
 .product-tab--content {
@@ -434,6 +443,7 @@ body {
 }
 
 .product-tab--content .nav-tab--review .write-review {
+  text-transform: uppercase;
   padding: 0.75rem 1rem;
   background: #00c4b4;
   -webkit-transition: all 0.2s;
