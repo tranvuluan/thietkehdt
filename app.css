@@ -330,16 +330,7 @@ img {
 .item-content-title {
     font-size: 2rem;
     margin-bottom: 5px;
-    border: 1px solid red;
     overflow: hidden;
-}
-
-.down-top-overflow {
-    display: inline-block;
-    transform: translateY(50px);
-    transition-timing-function:  ease-in-out;
-    transition-duration: 0.6s;
-
 }
 
 .item-content-description {
@@ -351,6 +342,14 @@ img {
 
 .item-content-action {
     overflow:hidden;
+}
+
+.down-top-overflow {
+    display: inline-block;
+    transform: translateY(50px);
+    transition-timing-function:  ease-in-out;
+    transition-duration: 0.6s;
+
 }
 
 .owl-item.active .down-top-overflow {
@@ -374,7 +373,7 @@ img {
         height: 100vh;
         transition: 0.4s ease-in-out;
         width: 50%;
-        font-size: 1.5rem;
+        font-size: 1rem;
         right: 100%;
         background-color: white;
     }
@@ -398,7 +397,26 @@ img {
         margin-right: 0px;
     }
     .nav-user-cart>li {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         margin-right: 10px;
     }
+
+    /* Slide */
+    .item-content-title {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+    
+    .item-content-description {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    
+    
+    .item-content-action {
+        overflow:hidden;
+    }
+
 }
