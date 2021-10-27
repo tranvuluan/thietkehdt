@@ -1,0 +1,65 @@
+$primary: #00c4b4;
+$back: rgba(0, 0, 0, 0.75);
+$secondary: #f5f5f5;
+
+footer {
+  background: $secondary;
+}
+.footer-top .row {
+  padding: 2.5rem 0;
+}
+.footer-title {
+  margin: 0.75rem 0;
+}
+.footer-content li {
+  margin-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.newsletter {
+  & p {
+    margin-bottom: 0.75rem;
+  }
+  & input {
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+    background: $secondary;
+  }
+  & button {
+    margin-left: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1.5rem;
+    transition: all 0.25s;
+    &:hover {
+      background: #222;
+    }
+  }
+}
+
+.footer-bottom {
+  padding-top: 1.75rem;
+  background: #fff;
+  &--social-nav {
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+      background: $secondary;
+      margin-right: 0.75rem;
+      padding: 0.75rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      transition: all 0.2s;
+      color: rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        background: $primary;
+        color: #fff;
+      }
+    }
+  }
+  &--address {
+    padding: 0.75rem 0;
+    text-align: center;
+  }
+}
