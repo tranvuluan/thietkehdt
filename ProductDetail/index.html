@@ -51,6 +51,8 @@
       </div>
     </div>
     <!-- END NAV -->
+
+    <!-- MODAL -->
     <section class="modal modal--hidden" id="modal">
       <div class="modal--inner">
         <button class="modal--inner__close">
@@ -61,6 +63,9 @@
         <div class="modal--inner__content"></div>
       </div>
     </section>
+    <!-- END MODAL -->
+
+    <!-- BREADCRUMB -->
     <section class="breadcrumb">
       <div class="container breadcrumb--nav">
         <a href="/" class="breadcrumb--link">Home</a>
@@ -70,9 +75,12 @@
         <a href="/" class="breadcrumb--link">Abc xzy</a>
       </div>
     </section>
+    <!-- END BREADCRUMB -->
+
+    <!-- PRODUCT DETAIL -->
     <main class="container">
-      <div class="product">
-        <div class="product--image">
+      <div class="product row">
+        <div class="product--image col-md-6 col-12">
           <img src="../Image/1.jpeg" id="mainImg" />
           <div class="product--image__other">
             <img src="../Image/1.jpeg" id="otherImg" class="img--active" />
@@ -82,7 +90,7 @@
             <img src="../Image/1.jpeg" id="otherImg" />
           </div>
         </div>
-        <div class="product--info">
+        <div class="product--info col-md-6 col-12 px-1">
           <div class="product--label">
             <span class="product--label__sale">-50%</span>
             <span class="product--label__available">In Stock</span>
@@ -154,6 +162,9 @@
         </div>
       </div>
     </main>
+    <!-- END PRODUCT DETAIL  -->
+
+    <!-- PRODUCT DESCRIPTION AND REVIEW -->
     <div class="container">
       <div class="product-tab">
         <ul class="product-tab--navbar">
@@ -177,10 +188,13 @@
         </div>
       </div>
     </div>
+    <!-- END PRODUCT DESCRIPTION AND REVIEW -->
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer-top container">
           <div class="row">
-            <div class="col-3">
+            <div class="col-6 col-md-3">
               <h4 class="footer-title">INFORMATION</h4>
               <ul class="footer-content">
                 <li><a href="#">About Us</a></li>
@@ -189,7 +203,7 @@
                 <li><a href="#">Affiliate</a></li>
               </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3">
               <h4 class="footer-title">CUSTOMER CARE</h4>
               <ul class="footer-content">
                 <li><a href="#">Returns</a></li>
@@ -198,7 +212,7 @@
                 <li><a href="#">Track Orders</a></li>
               </ul>
             </div>
-            <div class="col-6 newsletter">
+            <div class="col-12 col-md-6 newsletter">
               <h4 class="footer-title">NEWSLETTER</h4>
               <p>Subscribe to get daily news & more gif</p>
               <input type="text" placeholder=" Your email address">
@@ -232,7 +246,8 @@
         </div>
       </div>
     </footer>
-
+    <!-- END FOOTER  -->
+    
     <script src="../script/modal.js"></script>
     <script src="../script/detailpage.js"></script>
   </body>

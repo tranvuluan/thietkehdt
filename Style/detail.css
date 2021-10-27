@@ -30,7 +30,7 @@ textarea {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.75);
-  z-index: 999999;
+  z-index: 999;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -42,6 +42,7 @@ textarea {
 
 .modal--inner {
   position: relative;
+  z-index: 10000;
 }
 
 .modal--inner__close {
@@ -142,17 +143,17 @@ textarea {
 }
 
 .product {
+  margin-bottom: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3.5rem;
 }
 
 .product--image, .product--info {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  max-width: 50%;
+  margin-top: .5rem;
 }
 
 .product--image {
@@ -181,7 +182,7 @@ textarea {
 }
 
 .product--info {
-  padding: 0 3.5rem;
+  padding: 0 2.5rem;
 }
 
 .product--image img {
@@ -316,6 +317,9 @@ textarea {
 .product--form--quantity {
   background: #f7f8fa;
   margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product--form--quantity button {
@@ -334,12 +338,13 @@ textarea {
   width: 2.25rem;
   text-align: center;
   padding: 0.5rem 0;
+  font-size: 1rem;
 }
 
 .product--form--addcart {
   font-size: 1rem;
   background: #00c4b4;
-  padding: 0.25rem 3.5rem;
+  padding: 0.25rem 2.5rem;
   color: #fff;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -453,5 +458,12 @@ textarea {
 
 .product-tab--content .nav-tab--describe {
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .px-1 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 /*# sourceMappingURL=detail.css.map */
