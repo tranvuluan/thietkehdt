@@ -13,7 +13,7 @@ closeModal.addEventListener("click", () => {
 const sizeModalBtn = document.querySelector("#sizeInfo");
 sizeModalBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  const sizeContent = `<img src="../Image/size.jpeg" />`;
+  const sizeContent = `<img src="../images/size.jpeg" />`;
   showModal(sizeContent);
 });
 
