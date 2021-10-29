@@ -968,6 +968,7 @@ footer {
 
 .newsletter button:hover {
     background: #222;
+    color: white;
 }
 
 .footer-bottom {
