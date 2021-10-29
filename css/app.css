@@ -823,7 +823,8 @@ input, textarea {
     text-transform: uppercase;
     color: #222;
     background: transparent;
-    border-bottom: 1px solid #222;
+    border: none;
+    border-bottom: 1px solid black;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
@@ -839,6 +840,13 @@ input, textarea {
     width: 100%;
     padding: 0.75rem;
     margin: 1.5rem 0;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.product--buynow:hover {
+    color: white;
+    background: black;
 }
 
 .product-tab {
