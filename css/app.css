@@ -523,7 +523,7 @@ input, textarea {
 }
 
 .modal--inner__content__shipping h4, .modal--inner__content__contact h4 {
-    color: rgba(0, 0, 0, 0.75);
+    color: var(--text-color);
     font-weight: bold;
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
@@ -968,6 +968,7 @@ footer {
 
 .newsletter button:hover {
     background: #222;
+    color: white;
 }
 
 .footer-bottom {
