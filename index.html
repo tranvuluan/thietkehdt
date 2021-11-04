@@ -21,7 +21,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://kit.fontawesome.com/c3f0b916da.js" crossorigin="anonymous"></script>
     <!-- APP CSS -->
     <link rel="stylesheet" href="./css/grid.css" type="text/css">
     <link rel="stylesheet" href="./css/app.css" type="text/css">
@@ -53,7 +53,7 @@
                     <li class="nav-user-cart_user">
                         <i class='bx bx-user-circle' id="user-circle"></i>
                         <ul class="option-user unlogin" id="option-user">
-                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#loginmodal">Sign In</a></li>
                             <li><a href="#">Create Account</a></li>
                         </ul>
                         <!-- <ul class="option-user login">
@@ -129,7 +129,7 @@
                         <img src="./images/products/hinh1.jpg" alt="">
                         <ul class="_action-view-favorite">
                             <li>
-                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="far fa-eye"></i>
                             </li>
                             <li>
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -167,7 +167,7 @@
                         <img src="./images/products/hinh2.jpg" alt="">
                         <ul class="_action-view-favorite">
                             <li>
-                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="far fa-eye"></i>
                             </li>
                             <li>
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -205,7 +205,7 @@
                         <img src="./images/products/hinh3.jpg" alt="">
                         <ul class="_action-view-favorite">
                             <li>
-                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="far fa-eye"></i>
                             </li>
                             <li>
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -255,7 +255,7 @@
                         <img src="./images/products/hinh1.jpg" alt="">
                         <ul class="_action-view-favorite">
                             <li>
-                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="far fa-eye"></i>
                             </li>
                             <li>
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -293,7 +293,7 @@
                         <img src="./images/products/hinh1.jpg" alt="">
                         <ul class="_action-view-favorite">
                             <li>
-                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="far fa-eye"></i>
                             </li>
                             <li>
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -331,7 +331,7 @@
                         <img src="./images/products/hinh1.jpg" alt="">
                         <ul class="_action-view-favorite">
                             <li>
-                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="far fa-eye"></i>
                             </li>
                             <li>
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -451,6 +451,31 @@
         </div>
     </div>
     <!-- END BARS BOTTOM -->
+
+    <!-- LOGIN MODAL -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOGIN MODAL -->
 
     <!-- FOOTER -->
     <footer>

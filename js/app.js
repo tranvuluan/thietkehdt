@@ -19,7 +19,7 @@ $(document).ready(() => {
     })
 
     $(window).click((event) => {
-        let arr1 = ['hamburger', 'user-circle', 'search', 'hamburger-menu'];
+        let arr1 = ['hamburger', 'user-circle', 'search', 'hamburger-menu', 'search-input'];
         if (!arr1.includes(event.target.id)) {
             $('#hamburger-menu').removeClass('active');
             $('#nav-menu').removeClass('active');
@@ -42,7 +42,7 @@ $(document).ready(() => {
                 nav: false
             },
             600: {
-                nav: false
+            
             }
         }
     })

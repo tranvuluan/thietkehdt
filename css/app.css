@@ -213,6 +213,12 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease-in-out;
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    font-weight: 700;
+    color: var(--text-color)
 }
 
 #search-input.active {
@@ -441,8 +447,8 @@ img {
 
 ._action-view-favorite li {
     border-radius: 50%;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-size: 1rem;
     padding: 5px;
     line-height: 1.2rem;
     background-color: white;
@@ -512,7 +518,9 @@ img {
     left: 5%;
     background-color: #ffe0c0;
     padding: 2px 7px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border: 1px solid var(--text-color);
 }
 
 /* End Product Item */
@@ -579,11 +587,12 @@ input, textarea {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: start;
     margin-top: 0.5rem;
 }
 
 .product--image__other img {
+    margin-right: 8px;
     cursor: pointer;
     width: 6rem;
     -o-object-fit: cover;
@@ -1221,8 +1230,8 @@ footer {
 
 .modal-header .close {
     position: absolute;
-    top: -5%;
-    right: -4%;
+    top: -10%;
+    right: -2%;
     width: 30px;
     height: 30px;
     font-size: 15px;
