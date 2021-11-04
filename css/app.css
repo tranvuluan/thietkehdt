@@ -560,13 +560,6 @@ input, textarea {
     margin: 0 1rem;
 }
 
-.product {
-    margin-bottom: 3.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
 .product--image, .product--info {
     -webkit-box-flex: 1;
     -ms-flex: auto;
