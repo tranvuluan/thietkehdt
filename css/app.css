@@ -5,7 +5,6 @@
     --box-bg: #f5f5f5;
     /* background footer color,... */
     --text-color: #666;
-    
     --black-color: #0e0d0dfb;
     --white-color: #ffff;
     /* Nav text color,... */
@@ -45,9 +44,10 @@ img {
 }
 
 .container {
+    width: 100%;
     max-width: 1920px;
     padding: 0 5rem;
-    margin: 0 5rem;
+    margin: auto;
 }
 
 .overlay {
@@ -60,24 +60,40 @@ img {
 }
 
 .btn {
-    background-color: var(--main-color);
     padding: 0.25rem 1.5rem;
     text-transform: uppercase;
+    font-size: 1.25rem;
     font-weight: 600;
     display: inline-block;
     align-items: center;
     position: relative;
     border-radius: 50px;
-    color: white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    border: 1px solid transparent;
+}
+
+.btn-outline {
+    border: 1px solid var(--main-color);
+    background-color: #ffff;
+    color: var(--main-color);
+}
+
+.btn-hover {
+    border: 1px solid #ffff;
+    background-color: var(--main-color);
+    color: white;
 }
 
 .btn-hover:hover {
     border: 1px solid var(--main-color);
     color: var(--main-color);
     background-color: white;
+}
+
+.btn-outline:hover {
+    border: 1px solid var(--main-color);
+    color: #fff;
+    background-color: var(--main-color);
 }
 
 /* NAV */
@@ -87,8 +103,8 @@ img {
     top: 0;
     left: 0;
     z-index: 99;
-    width: 100%;
     background-color: white;
+    width: 100vw;
 }
 
 .nav {
@@ -281,7 +297,7 @@ img {
 
 /* END NAV */
 
-/* Carousel Slide */
+/* Carousel Main Slide */
 
 .carousel-nav-center {
     position: relative;
@@ -291,10 +307,9 @@ img {
     font-size: 3rem;
 }
 
-.carousel-nav-center .owl-nav button {
+.carousel-nav-center .owl-nav button{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
 }
 
 .carousel-nav-center .owl-nav .owl-prev {
@@ -373,27 +388,45 @@ img {
 }
 
 .section-header {
-    padding-bottom: 50px;
+    padding: 2rem 0;
     text-align: center;
 }
+
+.section-header span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: .5rem 3rem;
+    border-radius: 50px;
+}
+
+/* END Carousel Main Slide*/
+
 
 /* Product Item */
 
 .product-item {
     display: block;
     cursor: pointer;
-    width: 250px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .product-item-header {
     position: relative;
-    height: 360px;
     overflow: hidden;
 }
 
-.product-item img {
+.product-item-link {
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.product-item img {
+    z-index: 1;
+    height: 100%;
 }
 
 ._action-view-favorite {
@@ -403,6 +436,7 @@ img {
     right: 5%;
     transition: .4s ease-in-out;
     transform: scale(0.2);
+    cursor: pointer;
 }
 
 ._action-view-favorite li {
@@ -433,10 +467,12 @@ img {
     padding: 5px;
     font-size: 0.9rem;
     transition: .4s ease-in-out;
+    z-index: -15;
 }
 
 .product-item:hover ._action-add-to-cart {
     bottom: 0;
+    z-index: 10;
 }
 
 .product-item:hover ._action-view-favorite {
@@ -446,12 +482,13 @@ img {
 
 .product-item-content {
     text-align: center;
+    padding: 10px;
 }
 
 .product-item-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: black;
 }
 
 .product-item-price {
@@ -855,8 +892,71 @@ input, textarea {
         padding-right: 1rem !important;
     }
 }
-
 /* End Detail Page */
+
+/* COLLECTION INDEX */
+.product-collections {
+    padding: 5rem 0;
+ 
+}
+
+.collection-main, .collection-bottom, .collection-left, .collection-right {
+    position: relative;
+    overflow: hidden;
+}
+
+.collection-top {
+    padding-bottom: 10px;
+}
+
+.product-collections img {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.product-collections img:hover {
+    transform: scale(1.15);
+}
+
+.product-collections .btn {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    font-size: 1rem;
+}
+
+
+/* END COLLECTION INDEX */
+
+
+/* Bars Bottom */
+
+.bars-bottom {
+    margin-top: 60px;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(102, 102, 102, 0.315);
+}
+
+.bars-bottom-item {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+}
+
+.bars-bottom_icon {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.bars-bottom_text {
+    font-size: 0.8rem;
+}
+
+.bars-bottom_text p {
+    font-weight: 600;
+}
+
+/* END Bars Bottom */
 
 /* Footer */
 
@@ -864,8 +964,8 @@ footer {
     background: #f5f5f5;
 }
 
-.footer-top .row {
-    padding: 2.5rem 0;
+.footer-top {
+    padding: 2rem 0;
 }
 
 .footer-title {
@@ -875,10 +975,6 @@ footer {
 .footer-content li {
     margin-bottom: 0.5rem;
     color: rgba(0, 0, 0, 0.5);
-}
-
-.newsletter p {
-    margin-bottom: 0.75rem;
 }
 
 .newsletter input {
@@ -937,14 +1033,22 @@ footer {
     text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+}
+
 /* End Footer */
 
-@media only screen and (max-width: 850px) {
+/* Responsive Nav + Slide Main + General*/
+
+@media only screen and (max-width: 768px) {
     html {
         font-size: 12px;
     }
     .container {
-        padding: 0 15px;
+        padding: 0 20px;
     }
     .hamburger-menu {
         display: grid;
@@ -983,7 +1087,10 @@ footer {
         font-size: 1.8rem;
         margin-right: 10px;
     }
-    /* Slide */
+    /* Main Slide */
+    .product-slide-item {
+        padding-top: 50%;
+    }
     .item-content-title {
         font-size: 1rem;
         margin-bottom: 5px;
@@ -997,10 +1104,23 @@ footer {
     .item-content-action {
         overflow: hidden;
     }
+    /* END Main Slide */
+    .section {
+        padding: 0px!important;
+    }
+    .section-header {
+        padding: 2rem;
+    }
+
+    .section-header span {
+        font-size: 1rem;
+    }
 }
 
-/* MODAL */
+/* END Responsive Nav + Slide Main */
 
+
+/* MODAL MOUDLES */
 .modal-open {
     overflow: hidden;
 }

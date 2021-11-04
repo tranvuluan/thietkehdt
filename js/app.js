@@ -1,4 +1,8 @@
 $(document).ready(() => {
+    let nav_menu = $('#nav-menu');
+    let hamburger = $('#hamburger');
+    let user_circle = $('#user-circle');
+    let search = $('search');
     $('#hamburger-menu').click(() => {
         $('#hamburger-menu').toggleClass('active');
         $('#nav-menu').toggleClass('active');
@@ -14,7 +18,15 @@ $(document).ready(() => {
         $('#search-input').toggleClass('active');
     })
 
-
+    $(window).click((event) => {
+        let arr1 = ['hamburger', 'user-circle', 'search', 'hamburger-menu'];
+        if (!arr1.includes(event.target.id)) {
+            $('#hamburger-menu').removeClass('active');
+            $('#nav-menu').removeClass('active');
+            $('#search-input').removeClass('active');
+            $('#option-user').removeClass('active');
+        }
+    })
     let navText = ["<i class='bx bx-chevron-left'></i>", "<i class='bx bx-chevron-right'></i>"]
 
     $('#product-carousel').owlCarousel({
@@ -24,7 +36,57 @@ $(document).ready(() => {
         nav: true,
         navText: navText,
         autoplay: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                nav: false
+            },
+            600: {
+                nav: false
+            }
+        }
+    })
+
+    $('#new-arrivals-carousel').owlCarousel({
+        items: 4,
+        dots: false,
+        loop: true,
+        nav: false,
+        margin: 15,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+
+    $('#hot-trend-carousel').owlCarousel({
+        items: 4,
+        dots: false,
+        loop: true,
+        nav: false,
+        margin: 15,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
     })
 
 });
