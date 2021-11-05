@@ -313,7 +313,7 @@ img {
     font-size: 3rem;
 }
 
-.carousel-nav-center .owl-nav button{
+.carousel-nav-center .owl-nav button {
     position: absolute;
     top: 35%;
 }
@@ -411,7 +411,6 @@ section {
 }
 
 /* END Carousel Main Slide*/
-
 
 /* Product Item */
 
@@ -900,12 +899,13 @@ input, textarea {
         padding-right: 1rem !important;
     }
 }
+
 /* End Detail Page */
 
 /* COLLECTION INDEX */
+
 .product-collections {
     padding: 5rem 0;
- 
 }
 
 .collection-main, .collection-bottom, .collection-left, .collection-right {
@@ -933,9 +933,7 @@ input, textarea {
     font-size: 1rem;
 }
 
-
 /* END COLLECTION INDEX */
-
 
 /* Bars Bottom */
 
@@ -1119,16 +1117,15 @@ footer {
     .section-header {
         padding: 2rem;
     }
-
     .section-header span {
         font-size: 1rem;
     }
 }
+
 /* END Responsive Nav + Slide Main */
 
-
-
 /* Contact Page */
+
 .iframe-map {
     padding: 1rem 3rem;
 }
@@ -1152,20 +1149,19 @@ footer {
     flex-direction: column;
 }
 
-.contact-info p{
+.contact-info p {
     text-align: center;
-   color: #a8a8a8;
+    color: #a8a8a8;
 }
 
 .contact-info .fa {
     font-size: 2.5rem;
-    color: var(--text-color);  /* biến này lấy từ file app.css đã khai báo */
+    color: var(--text-color);
+    /* biến này lấy từ file app.css đã khai báo */
     margin: auto;
 }
 
-
-
-.input-field{
+.input-field {
     width: 100%;
     padding: 10px 0;
     margin: 5px 0;
@@ -1177,7 +1173,7 @@ footer {
     background: transparent;
 }
 
-.input-mess{
+.input-mess {
     width: 100%;
     padding: 10px 10px;
     margin: 5px 0;
@@ -1186,45 +1182,38 @@ footer {
     background: transparent;
     outline: none;
     border-radius: 30px;
-
 }
 
-.submit-btn{
+.submit-btn {
     width: 50%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right,#29989c,#03eccd);
+    background: linear-gradient(to right, #29989c, #03eccd);
     border: 0;
     color: #fff;
     outline: none;
     border-radius: 30px;
 }
 
-.contact-form{
+.contact-form {
     margin-top: 5%;
 }
 
-#contactFormWrapper{
+#contactFormWrapper {
     margin: auto;
     max-width: 70%;
     padding-bottom: 60px;
-    
 }
+
 /* END Contact Page */
 
-
 /* Cart Page */
-.cart{
+
+.cart {
     margin-bottom: 50px;
 }
-
-.img-fluid {
-    height: 150px;
-    width: 100px;
-}
-
 
 .cart-infos {
     padding-bottom: 40px;
@@ -1242,10 +1231,19 @@ footer {
     overflow-y: auto;
 }
 
-.cart-item{
+.cart-container {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cart-items {
+        height: 250px;
+    }
+}
+
+.cart-item {
     min-height: 120px;
-    border-bottom:1px solid var(--text-color);
-    padding: 10px;
+    border-bottom: 1px solid var(--text-color);
 }
 
 .cart-item .fa {
@@ -1261,27 +1259,27 @@ footer {
     transform: scale(1.2);
 }
 
-.cart-summary{
-    background-color: var(--box-bg);  
-    max-height: 300px; 
+.cart-summary {
+    background-color: var(--box-bg);
+    max-height: 300px;
 }
 
-.cart-detailed-totals{
+.cart-detailed-totals {
     padding: 15px;
 }
 
-.cart-summary-products{
+.cart-summary-products {
     color: var(--text-color);
     font-size: 20px;
 }
 
-.cart-summary-line{
+.cart-summary-line {
     padding-top: 10px;
     color: var(--text-color);
 }
 
-.checkout{
-    padding: 30px;
+.checkout {
+    padding: 20px 0;
 }
 
 .checkout a {
@@ -1292,23 +1290,23 @@ footer {
     font-size: 1rem;
 }
 
-.cart-product-button{
+.cart-product-button {
     display: flex;
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
 
-.amount-remove{
+.amount-remove {
     width: 30px;
-    border-top-left-radius:6px;
-    border-bottom-left-radius:6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
-input[type = button] {
+.cart input[type=button] {
     background-color: white !important;
 }
 
-.amount-text{
+.amount-text {
     font-size: 1.3rem;
     width: 35px;
     border-left-width: 0px;
@@ -1320,15 +1318,16 @@ input[type = button] {
     border-bottom-style: solid !important;
 }
 
-.amount-add{
+.amount-add {
     width: 30px;
-    border-top-right-radius:6px;
-    border-bottom-right-radius:6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 /* End Cart Page */
 
 /* Responsive contact page */
+
 @media only screen and (max-width: 768px) {
     .contact-content {
         margin-top: 30px;
@@ -1336,15 +1335,15 @@ input[type = button] {
     .contact-info {
         flex-direction: column;
     }
-
     .contact-info-item {
         margin-bottom: 20px;
     }
 }
+
 /* END Contact Page */
 
-
 /* MODAL MOUDLES */
+
 .modal-open {
     overflow: hidden;
 }
@@ -1527,13 +1526,14 @@ input[type = button] {
 }
 
 /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
+
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
