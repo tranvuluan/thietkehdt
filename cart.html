@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c3f0b916da.js" crossorigin="anonymous"></script>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css" type="text/css">
+    <link rel="stylesheet" href="./css/app.css" type="text/css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav" id="nav">
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger" id="hamburger"></div>
+                </div>
+                <a href="index.html" class="logo">
+                    FASHION STORE
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="left-right-effect delay-2"><a href="#">HOME</a></li>
+                    <li class="left-right-effect delay-4"><a href="#">PRODUCTS</a></li>
+                    <li class="left-right-effect delay-6"><a href="#">CONTACT</a></li>
+                    <li class="left-right-effect delay-8"><a href="#">ABOUT</a></li>
+                </ul>
+                <ul class="nav-user-cart">
+                    <li class="nav-user-cart_search">
+                        <i class='bx bx-search-alt-2' id="search">
+                        </i>
+                        <input type="text" id="search-input">
+                    </li>
+                    <li class="nav-user-cart_user">
+                        <i class='bx bx-user-circle' id="user-circle"></i>
+                        <ul class="option-user unlogin" id="option-user">
+                            <li><a href="#" data-toggle="modal" data-target="#loginmodal">Sign In</a></li>
+                            <li><a href="#">Create Account</a></li>
+                        </ul>
+                        <!-- <ul class="option-user login">
+                            <li>My Account</li>
+                            <li>My Order</li>
+                            <li>Logout</li>
+                        </ul> -->
+                    </li>
+                    <li><i class='bx bx-cart'></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/" class="breadcrumb--link">Home</a>
+            <span class="divider"></span>
+            <a href="/" class="breadcrumb--link">Cart</a>
+        </div>
+    </div>
+    <!-- END BREADCRUMB -->
+
+    <!-- CART -->
+    <section class="cart">
+        <div class="container">
+            <hr>
+            <div class="cart-header">
+                <span>SHOPPING CART</span>
+            </div>
+            <div class="row">
+                <div class="col-9 col-sm-12 cart-infos">
+                    <!-- cart products detailed -->
+                    <div class="cart-container">
+                        <div class="cart-overview js-cart">
+                            <ul class="cart-items">
+                                <li class="cart-item">
+                                    <div class="product-line-grid row spacing-10">
+                                        <!--  product left content: image-->
+                                        <div class="product-line-grid-left col-2 col-sm-3">
+                                            <span class="product-image media-middle">
+                                                <img class="img-fluid" src="images/products/1.jpeg">
+                                            </span>
+                                        </div>
+
+                                        <!--  product left body: description -->
+                                        <div class="product-line-grid-body col-9 col-sm-8">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="product-line-info">
+                                                        <a class="label" href="#">Morbi feugiat lacus</a>
+                                                    </div>
+
+                                                    <div class="product-line-info product-price">
+                                                        <span class="value">$55.00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="label">Qty:</div>
+                                                    <div class="cart-product-button">
+                                                        <input type="button" value="-" id="1-amount-remove"
+                                                            class="amount-remove"
+                                                            onclick="updateCartProductAmountDown('1');">
+                                                        <input type="number" value="1" id="1-amount-text"
+                                                            class="amount-text">
+                                                        <input type="button" value="+" id="1-amount-add"
+                                                            class="amount-add"
+                                                            onclick="updateCartProductAmountUp('1');">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="label">Total:</div>
+                                                    <div class="product-price total" id="1">
+                                                        $55.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 col-sm-1">
+                                            <div class="fa fa-remove"></div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="cart-item">
+                                    <div class="product-line-grid row spacing-10">
+                                        <!--  product left content: image-->
+                                        <div class="product-line-grid-left col-2 col-sm-3">
+                                            <span class="product-image media-middle">
+                                                <img class="img-fluid" src="images/products/1.jpeg">
+                                            </span>
+                                        </div>
+
+                                        <!--  product left body: description -->
+                                        <div class="product-line-grid-body col-9 col-sm-8">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="product-line-info">
+                                                        <a class="label" href="#">Morbi feugiat lacus</a>
+                                                    </div>
+
+                                                    <div class="product-line-info product-price">
+                                                        <span class="value">$55.00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="label">Qty:</div>
+                                                    <div class="cart-product-button">
+                                                        <input type="button" value="-" id="1-amount-remove"
+                                                            class="amount-remove"
+                                                            onclick="updateCartProductAmountDown('1');">
+                                                        <input type="number" value="1" id="1-amount-text"
+                                                            class="amount-text">
+                                                        <input type="button" value="+" id="1-amount-add"
+                                                            class="amount-add"
+                                                            onclick="updateCartProductAmountUp('1');">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="label">Total:</div>
+                                                    <div class="product-price total" id="1">
+                                                        $55.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 col-sm-1">
+                                            <div class="fa fa-remove"></div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="btn btn-outline btncontinue" href="#">
+                        <span>Continue shopping</span>
+                    </a>
+                    <!-- shipping informations -->
+                </div>
+                <div class="cart-summary col-3 col-sm-12">
+                    <div class="cart-detailed-totals">
+                        <div class="cart-summary-products">
+                            <div class="summary-label">There are 1 item in your cart</div>
+                        </div>
+                        <div class="">
+                            <div class="cart-summary-line" id="cart-subtotal-products">
+                                <span class="label js-subtotal">
+                                    Total products:
+                                </span>
+                                <span class="value">$55.00</span>
+                            </div>
+                            <div class="cart-summary-line" id="cart-subtotal-shipping">
+                                <span class="label">
+                                    Total Shipping:
+                                </span>
+                                <span class="value">$7.00</span>
+                                <div><small class="value" id="cart-sumary"></small></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="cart-summary-line">
+                                <span class="label">Taxes:</span>
+                                <span class="value">$0.00</span>
+                            </div>
+
+                            <div class="cart-summary-line cart-total">
+                                <span class="label">Total:</span>
+                                <span class="value" id="cart-total">$62.00 (tax excl.)</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="checkout cart-detailed-actions">
+                        <div class="text-xs-center">
+                            <a href="#" class="btn btn-hover">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CART -->
+
+    <!-- BARS BOTTOM -->
+    <div class="bars-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-sm-6 bars-bottom-item">
+                    <div class="bars-bottom_icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+                    <div class="bars-bottom_text">
+                        <p>MONEY BACK GUARANTEE</p>
+                        <span>100% money back guarantee</span>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-6 bars-bottom-item">
+                    <div class="bars-bottom_icon ">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                    </div>
+                    <div class="bars-bottom_text">
+                        <p>MONEY BACK GUARANTEE</p>
+                        <span>100% money back guarantee</span>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-6 bars-bottom-item">
+                    <div class="bars-bottom_icon">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                    </div>
+                    <div class="bars-bottom_text">
+                        <p>MONEY BACK GUARANTEE</p>
+                        <span>100% money back guarantee</span>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-6 bars-bottom-item">
+                    <div class="bars-bottom_icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="bars-bottom_text">
+                        <p>MONEY BACK GUARANTEE</p>
+                        <span>100% money back guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BARS BOTTOM -->
+
+    <!-- LOGIN MODAL -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOGIN MODAL -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <h4 class="footer-title">INFORMATION</h4>
+                        <ul class="footer-content">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <h4 class="footer-title">CUSTOMER CARE</h4>
+                        <ul class="footer-content">
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Track Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-12 newsletter col-sm-12">
+                        <h4 class="footer-title">NEWSLETTER</h4>
+                        <p>Subscribe to get daily news & more gif</p>
+                        <input type="text" placeholder=" Your email address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom--social-nav">
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-facebook bx-xs"></i>
+                    </a>
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-instagram bx-xs"></i>
+                    </a>
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-youtube bx-xs"></i>
+                    </a>
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-twitter bx-xs"></i>
+                    </a>
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-pinterest-alt bx-xs"></i>
+                    </a>
+                </div>
+                <div class="footer-bottom--address">
+                    <p>Copyright © 2021. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER  -->
+
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BOOSTRAP  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="./js/cart.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

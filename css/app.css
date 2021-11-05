@@ -393,6 +393,10 @@ img {
     padding-top: 60px;
 }
 
+section {
+    padding-top: 60px;
+}
+
 .section-header {
     padding: 2rem 0;
     text-align: center;
@@ -1208,6 +1212,121 @@ footer {
     padding-bottom: 60px;
     
 }
+/* END Contact Page */
+
+
+/* Cart Page */
+.cart{
+    margin-bottom: 50px;
+}
+
+.img-fluid {
+    height: 150px;
+    width: 100px;
+}
+
+
+.cart-infos {
+    padding-bottom: 40px;
+}
+
+.cart-header {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    padding-bottom: 15px;
+}
+
+.cart-items {
+    height: 370px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.cart-item{
+    min-height: 120px;
+    border-bottom:1px solid var(--text-color);
+    padding: 10px;
+}
+
+.cart-item .fa {
+    line-height: 50px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transform: scale(1);
+    transition: .2s ease-in-out;
+}
+
+.cart-item .fa:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+.cart-summary{
+    background-color: var(--box-bg);  
+    max-height: 300px; 
+}
+
+.cart-detailed-totals{
+    padding: 15px;
+}
+
+.cart-summary-products{
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.cart-summary-line{
+    padding-top: 10px;
+    color: var(--text-color);
+}
+
+.checkout{
+    padding: 30px;
+}
+
+.checkout a {
+    font-size: 1rem;
+}
+
+.btncontinue {
+    font-size: 1rem;
+}
+
+.cart-product-button{
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.amount-remove{
+    width: 30px;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
+}
+
+input[type = button] {
+    background-color: white !important;
+}
+
+.amount-text{
+    font-size: 1.3rem;
+    width: 35px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    text-align: center;
+    border-top-style: solid !important;
+    border-left-style: solid !important;
+    border-right-style: solid !important;
+    border-bottom-style: solid !important;
+}
+
+.amount-add{
+    width: 30px;
+    border-top-right-radius:6px;
+    border-bottom-right-radius:6px;
+}
+
+/* End Cart Page */
 
 /* Responsive contact page */
 @media only screen and (max-width: 768px) {
@@ -1405,4 +1524,16 @@ footer {
     .modal-lg {
         max-width: 800px;
     }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
