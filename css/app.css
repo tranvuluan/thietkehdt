@@ -1120,8 +1120,109 @@ footer {
         font-size: 1rem;
     }
 }
-
 /* END Responsive Nav + Slide Main */
+
+
+
+/* Contact Page */
+.iframe-map {
+    padding: 1rem 3rem;
+}
+
+#iframe-map {
+    width: 100%;
+    height: 200px;
+}
+
+.contact-content {
+    margin-top: 100px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p{
+    text-align: center;
+   color: #a8a8a8;
+}
+
+.contact-info .fa {
+    font-size: 2.5rem;
+    color: var(--text-color);  /* biến này lấy từ file app.css đã khai báo */
+    margin: auto;
+}
+
+
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.input-mess{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border: 1px solid #999;
+    outline: none;
+    background: transparent;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+.submit-btn{
+    width: 50%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#29989c,#03eccd);
+    border: 0;
+    color: #fff;
+    outline: none;
+    border-radius: 30px;
+}
+
+.contact-form{
+    margin-top: 5%;
+}
+
+#contactFormWrapper{
+    margin: auto;
+    max-width: 70%;
+    padding-bottom: 60px;
+    
+}
+
+/* Responsive contact page */
+@media only screen and (max-width: 768px) {
+    .contact-content {
+        margin-top: 30px;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info-item {
+        margin-bottom: 20px;
+    }
+}
+/* END Contact Page */
 
 
 /* MODAL MOUDLES */

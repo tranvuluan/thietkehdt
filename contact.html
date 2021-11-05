@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c3f0b916da.js" crossorigin="anonymous"></script>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css" type="text/css">
+    <link rel="stylesheet" href="./css/app.css" type="text/css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav" id="nav">
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger" id="hamburger"></div>
+                </div>
+                <a href="index.html" class="logo">
+                    FASHION STORE
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="left-right-effect delay-2"><a href="#">HOME</a></li>
+                    <li class="left-right-effect delay-4"><a href="#">PRODUCTS</a></li>
+                    <li class="left-right-effect delay-6"><a href="#">CONTACT</a></li>
+                    <li class="left-right-effect delay-8"><a href="#">ABOUT</a></li>
+                </ul>
+                <ul class="nav-user-cart">
+                    <li class="nav-user-cart_search">
+                        <i class='bx bx-search-alt-2' id="search">
+                        </i>
+                        <input type="text" id="search-input">
+                    </li>
+                    <li class="nav-user-cart_user">
+                        <i class='bx bx-user-circle' id="user-circle"></i>
+                        <ul class="option-user unlogin" id="option-user">
+                            <li><a href="#" data-toggle="modal" data-target="#loginmodal">Sign In</a></li>
+                            <li><a href="#">Create Account</a></li>
+                        </ul>
+                        <!-- <ul class="option-user login">
+                            <li>My Account</li>
+                            <li>My Order</li>
+                            <li>Logout</li>
+                        </ul> -->
+                    </li>
+                    <li><i class='bx bx-cart'></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/" class="breadcrumb--link">Home</a>
+            <span class="divider"></span>
+            <a href="/" class="breadcrumb--link">Contact</a>
+        </div>
+    </div>
+    <!-- END BREADCRUMB -->
+   
+    <!-- MAP -->
+    <div class="section">
+        <div class="iframe-map">
+            <div class="container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6696584236756!2d106.680069614246!3d10.759922362441706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b7c3ed289%3A0xa06651894598e488!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTw6BpIEfDsm4!5e0!3m2!1svi!2s!4v1636097951495!5m2!1svi!2s"
+                    id="iframe-map" allowfullscreen="" loading="lazy" ></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- END MAP -->
+
+    <!-- CONTACT -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-info text-center">
+                <div class="contact-info-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="content">
+                        <p>Entrer en contact</p>
+                        <p>Téléphone: 703.172.3412</p>
+                        <p>Télécopieur: 703.172.2341</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="content">
+                        <p>Visitez notre site</p>
+                        <p>Tarup 5210, Odense kommune, Danmark</p>
+                        <p>Du lundi au vendredi: 10h à 19h</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div class="content">
+                        <p>Travailler avec nous?</p>
+                        <p>Etsy moustache seifies Brooklyn </p>
+                        <p>SWAG artisan typographie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 contact-form">
+                    <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8"
+                        class="contact-form"><input type="hidden" name="form_type" value="contact"><input type="hidden"
+                            name="utf8" value="✓">
+                        <div id="contactFormWrapper">
+                            <h4>Get In Touch</h4>
+                            <div class="row">
+                                <div class="col-xs col-md-6">
+                                    <label>Name:<input type="text" class="input-field" required></label>
+                                    <label>Email:<input type="text" class="input-field" required></label>
+                                    <label>Phone:<input type="text" class="input-field" required></label>
+                                </div>
+                                <div class="col-xs col-md-6">
+                                    <label>Message:</label><textarea rows="11" cols="33" class="input-mess"></textarea>
+                                    <button type="submit" class="submit-btn">SEND</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <h4 class="footer-title">INFORMATION</h4>
+                        <ul class="footer-content">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <h4 class="footer-title">CUSTOMER CARE</h4>
+                        <ul class="footer-content">
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Track Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-12 newsletter col-sm-12">
+                        <h4 class="footer-title">NEWSLETTER</h4>
+                        <p>Subscribe to get daily news & more gif</p>
+                        <input type="text" placeholder=" Your email address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom--social-nav">
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-facebook bx-xs"></i>
+                    </a>
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-instagram bx-xs"></i>
+                    </a>
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-youtube bx-xs"></i>
+                    </a>
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-twitter bx-xs"></i>
+                    </a>
+                    <a href="#" class="footer-bottom--social-nav__icon">
+                        <i class="bx bxl-pinterest-alt bx-xs"></i>
+                    </a>
+                </div>
+                <div class="footer-bottom--address">
+                    <p>Copyright © 2021. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER  -->
+
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BOOSTRAP  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
