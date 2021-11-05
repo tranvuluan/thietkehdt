@@ -1135,9 +1135,6 @@ footer {
     height: 200px;
 }
 
-.contact-content {
-    margin-top: 100px;
-}
 
 .contact-info {
     display: flex;
@@ -1198,7 +1195,7 @@ footer {
 }
 
 .contact-form {
-    margin-top: 5%;
+    margin-top: 40px;
 }
 
 #contactFormWrapper {
