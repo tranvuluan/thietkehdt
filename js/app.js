@@ -42,7 +42,7 @@ $(document).ready(() => {
                 nav: false
             },
             600: {
-            
+
             }
         }
     })
@@ -87,6 +87,31 @@ $(document).ready(() => {
                 items: 4
             }
         }
+    })
+
+    $('#label-login').click(() => {
+        $('#login-line').removeClass('line-to-right');
+        $('#login-line').addClass('line-to-left');
+
+        $('#login-content').css('left', '0');
+        $('#register-content').css('left', '100%');
+        $('#register-content').css('opacity', '0');
+        $('#login-content').css('opacity', '1');
+
+        $('#login-register-content').css('height', '350px')
+
+    })
+
+    $('#label-register').click(() => {
+        $('#login-line').removeClass('line-to-left');
+        $('#login-line').addClass('line-to-right');
+
+        $('#register-content').css('left', '0');
+        $('#login-content').css('left', '-100%');
+        $('#login-content').css('opacity', '0');
+        $('#register-content').css('opacity', '1');
+
+        $('#login-register-content').css('height', '600px')
     })
 
 });

@@ -1332,6 +1332,178 @@ footer {
 /* End Cart Page */
 
 
+/* login Modal */
+
+#loginmodal  .modal-body {
+    padding: 30px;
+}
+
+#loginmodal .close {
+    top: -2%;
+}
+
+#loginmodal .modal-content {
+    width: 700px!important; 
+    transform: translateX(-80px);
+}
+
+#loginmodal .modal-header {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.login-header {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.login-line {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 0;
+    transition: .3s ease-in-out;
+}
+
+.line-to-left {
+    left: 0!important;
+}
+
+.line-to-right {
+    left: 50%!important;
+}
+
+
+.login-register {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+._login {
+    width: 47%;
+    transition: .3s ease-in-out;
+}
+._register {
+    width: 47%;
+    transition: .3s ease-in-out;
+}
+
+.login-register-content {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+
+.login-content, .register-content {
+    padding: 30px 15px;
+    font-size: 1rem;
+    width: 100%!important;
+    position: absolute;
+    transition: .3s ease-in-out;
+}
+
+.login-content {
+    left: 0;
+}
+
+.register-content {
+    left: 100%;
+}
+
+
+.form-item {
+    padding-bottom: 25px;
+}
+
+.form-item label{
+   display: block;
+}
+
+.input-form-login {
+    border: none;
+    border-bottom: 1px solid var(--text-color) !important;
+    height: 30px;
+    font-size: 1rem;
+    color: var(--text-color);
+    width: 100%;
+}
+
+.input-form-login:focus {
+    color: var(--main-color);
+}
+
+.btn-login {
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-login:hover span {
+    color: var(--main-color);
+}
+
+.btn-login span {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-header {
+        font-size: 1.5rem;
+    }
+    .login-header ._login {
+        text-align: right;
+    }
+
+    .login-header ._register {
+        text-align: left;
+    }
+
+    ._login {
+        width: 35%;
+        
+    }
+    ._register {
+        width: 35%;
+    }
+    .form-item label  {
+        font-size: 1.2rem;
+    }
+
+    #loginmodal .modal-content {
+        width: 100%!important;
+        transform: translateX(0);
+    }
+
+    #loginmodal .close {
+        top: -2%;
+    }
+       
+}
+
+/* END Login Modal */
+
 
 /* MODAL MOUDLES */
 
@@ -1341,7 +1513,7 @@ footer {
 
 .modal {
     position: fixed;
-    top: 0;
+    top: 20px;
     right: 0;
     bottom: 0;
     left: 0;
