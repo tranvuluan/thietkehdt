@@ -60,9 +60,7 @@ img {
 }
 
 .btn {
-    padding: 0.25rem 1.5rem;
     text-transform: uppercase;
-    font-size: 1.25rem;
     font-weight: 600;
     display: inline-block;
     align-items: center;
@@ -73,12 +71,16 @@ img {
 }
 
 .btn-outline {
+    font-size: 1.25rem;
+    padding: 0.25rem 1.5rem;
     border: 1px solid var(--main-color);
     background-color: #ffff;
     color: var(--main-color);
 }
 
 .btn-hover {
+    font-size: 1.25rem;
+    padding: 0.25rem 1.5rem;
     border: 1px solid #ffff;
     background-color: var(--main-color);
     color: white;
@@ -1329,6 +1331,10 @@ footer {
     border-bottom-right-radius: 6px;
 }
 
+.btn-checkout {
+    font-size: 0.8rem;
+}
+
 /* End Cart Page */
 
 
@@ -1501,8 +1507,173 @@ footer {
     }
        
 }
-
 /* END Login Modal */
+
+/* Chechout */
+.pay-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 1150px;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+._pinput {
+    margin-bottom: 2px!important;
+}
+
+.thanhtoan-stt {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+
+._inputthanhtoan {
+    width: 300px;
+    height: 28px;
+    margin-bottom: 10px!important;
+    text-align: left;
+}
+
+.thanhtoan1 {
+    padding-left: 30px;
+    width: 300px;
+}
+
+.thanhtoan2 {
+    width: 350px;
+    padding-left: 30px;
+    border-left: 1px dashed gray;
+}
+
+.thanhtoan3 {
+    width: 430px;
+    padding-left: 30px;
+    border-left: 1px dashed gray;
+}
+
+.thanhtoan-content {
+    margin-top: 10px;
+    display: flex;
+}
+
+.thanhtoan-content input {
+    width: fit-content;
+}
+
+.thanhtoan-content span {
+    margin-left: 10px;
+    width: fit-content;
+}
+
+/* Cột 3 - thông tin giỏ hàng */
+
+.thanhtoan3-content {
+    margin-top: 15px;
+}
+
+.list-info {
+    list-style: none;
+    border-bottom: 1px solid gray;
+}
+
+.list-info ul li {
+    margin-bottom: 7px;
+}
+
+.info {
+    display: flex;
+    font-size: 15px;
+}
+
+.top-info {
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+}
+
+.col1 {
+    width: 50%;
+    text-align: left;
+    height: fit-content;
+}
+
+.col2 {
+    width: 20%;
+    text-align: center;
+}
+
+.col3 {
+    width: 20%;
+    text-align: right;
+}
+
+.cart-price, .ship-price, .total-price {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 10px 0 10px 0;
+}
+
+.cart-price span {
+    font-weight: 500;
+}
+
+.total-price span {
+    font-weight: 500;
+}
+
+._price {
+    float: right;
+    margin-right: 40px;
+}
+
+._formthanhtoan {
+    padding: 10px 0 10px 0;
+}
+
+.code-khuyenmai input {
+    width: 230px;
+    height: 25px!important;
+    margin: 10px 0!important;
+}
+
+.code {
+    width: 90px;
+    height: 20px;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    padding-bottom: 28px!important;
+}
+
+.btnthanhtoan {
+    background-color: rgb(26, 26, 26)!important;
+    cursor: pointer;
+}
+
+.btnthanhtoan:hover {
+    color: rgb(24, 24, 24)!important;
+    background-color: white!important;
+}
+
+@media only screen and (max-width: 768px) {
+    .pay-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .thanhtoan1, .thanhtoan2, .thanhtoan3 {
+        width:100%;
+    }
+}
+/* End Checkout */
 
 
 /* MODAL MOUDLES */
